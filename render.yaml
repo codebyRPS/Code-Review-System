@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: code-review-backend
+    runtime: node
+    rootDir: BackEnd
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: GOOGLE_GEMINI_KEY
+        sync: false
